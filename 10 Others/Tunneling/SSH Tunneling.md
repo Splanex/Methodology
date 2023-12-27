@@ -1,0 +1,1 @@
+	ssh -L <Local port>:127.0.0.1:<victim port> <victim username>@<Target's IP address>
