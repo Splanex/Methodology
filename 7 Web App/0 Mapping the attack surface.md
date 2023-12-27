@@ -1,0 +1,12 @@
+
+- Client Side Validation (SQL injections, XSS, general logical flaws)
+	- User Submitted data through web forms can be validated on the client side, server side or both.
+- Database Interaction (SQL injections)
+- File uploading and downloading (LFI or RFI)
+- Display of user supplied data (XXS)
+- Redirections (HTTP response splitting or Header manipulation)
+- Access Controls and Login protected pages (Authentication bypass techniques, bruteforce)
+- Error messages
+	- Gives info
+- Charting
+	- Organize attack surface & the results of the tests against the possible vulnerabilities

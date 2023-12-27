@@ -1,0 +1,1 @@
+	ffuf -u http://localhost/labs/e0x02.php?account=FUZZ -w [wordlist] -mr 'admin'

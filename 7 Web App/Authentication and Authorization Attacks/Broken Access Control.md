@@ -1,0 +1,1 @@
+UserA can access/control UserB's content

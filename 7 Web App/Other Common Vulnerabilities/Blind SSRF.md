@@ -1,0 +1,1 @@
+If the responses aren't shown, utilize webhooks.site, ec2 free instances or Burp's collaborator to receive the response.

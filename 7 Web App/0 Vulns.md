@@ -1,0 +1,6 @@
+- SQL injections
+- Unristricted file upload
+- Path traversal
+- LFI
+- RFI
+- Server Side Template Injection (SSTI)

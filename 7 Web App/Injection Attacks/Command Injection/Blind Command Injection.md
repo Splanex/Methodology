@@ -1,0 +1,1 @@
+[webhook.site url]?q='[command]'

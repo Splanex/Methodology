@@ -1,0 +1,1 @@
+SQL injection isn't instantly executed, but stored and executed afterwards.

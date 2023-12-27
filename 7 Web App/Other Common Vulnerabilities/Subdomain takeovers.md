@@ -1,0 +1,1 @@
+If a domain stops being in control of the entity that used to control it, but an application is still making requests to it, by controlling the domain, you now control the the requests made.
