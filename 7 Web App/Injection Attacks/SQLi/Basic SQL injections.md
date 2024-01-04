@@ -2,11 +2,6 @@ PortSwigget Cheat Sheet: https://portswigger.net/web-security/sql-injection/chea
 
 Pentestermonkey SQL injection cheat sheet: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection
 
-## Error
-	'
-	"
-	1 or @@version=1); -- -
-
 ## Logic
 **Server expects string**
 
